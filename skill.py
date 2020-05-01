@@ -16,5 +16,5 @@ for i in range(len(skill_trees)):
     t = skill[0:length]
     if skill_trees[i]==t:
         answer+=1
-
+        
 print(answer)
