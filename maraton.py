@@ -1,17 +1,14 @@
-import heapq
-
-
 participant = ["mislav","stanko","mislav","ana"]
 completion = ["stanko","ana","mislav"]
 #for i in range(len(completion)):
 #    participant.remove(completion[i])
 #print("".join(participant))
-heapq.heapify(participant)
-heapq.heapify(completion)
-while 1:
-    if participant[0]==completion[0]:
-        heapq.heappop(participant)
-        heapq.heappop(completion)
-    else:
-        print(participant[0])
-        break
+def solution(participant, completion):
+    participant.sort()
+    completion.sort()
+    for i,v in zip(participant,completion):
+        if i!=v:
+            return(i)
+    return participant[-1]
+
+print(solution(participant,completion))
