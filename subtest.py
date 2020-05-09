@@ -1,5 +1,5 @@
-answer = [1,3,2,4,2]
-k = len(answer)
+answers = [1,3,2,4,2]
+k = len(answers)
 first = ("12345"*2000)[:k]
 second = ("21232425"*1250)[:k]
 third = ("3311224455"*1000)[:k]
